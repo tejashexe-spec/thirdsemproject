@@ -58,10 +58,10 @@ class SpotifyScreen extends StatelessWidget {
               Row(
                 children: [
                   _buildArtistItem(
-                      "Lana Del Rey", "assets/images/lana_del_rey.png"),
+                      "Lana Del Rey", "assets/images/img.png"),
                   const SizedBox(width: 20),
                   _buildArtistItem(
-                      "Marvin Gaye", "assets/images/marvin_gaye.png"),
+                      "Marvin Gaye", "assets/images/img.png"),
                 ],
               ),
               const SizedBox(height: 28),
@@ -79,7 +79,7 @@ class SpotifyScreen extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(4),
                       child: Image.asset(
-                        "assets/images/review.png",
+                        "assets/images/img.png",
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) =>
                         const Icon(Icons.music_note, color: Colors.black),
@@ -87,9 +87,9 @@ class SpotifyScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: 12),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         "#SPOTIFYWRAPPED",
                         style: TextStyle(
@@ -122,7 +122,7 @@ class SpotifyScreen extends StatelessWidget {
                     child: _buildCard(
                       subtitle: "Your Top Songs 2021",
                       cardChild: Image.asset(
-                        "assets/images/your_top_2021_songs.png",
+                        "assets/images/img.png",
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) => Container(
                           padding: const EdgeInsets.all(12),
@@ -133,10 +133,10 @@ class SpotifyScreen extends StatelessWidget {
                               end: Alignment.bottomRight,
                             ),
                           ),
-                          child: Column(
+                          child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
+                            children: [
                               Text(
                                 "Your Top Songs",
                                 style: TextStyle(
@@ -164,7 +164,7 @@ class SpotifyScreen extends StatelessWidget {
                     child: _buildCard(
                       subtitle: "Your Artists Revealed",
                       cardChild: Image.asset(
-                        "assets/images/your_artists_revealed.png",
+                        "assets/images/img.png",
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) => Container(
                           padding: const EdgeInsets.all(12),
@@ -175,10 +175,10 @@ class SpotifyScreen extends StatelessWidget {
                               end: Alignment.bottomRight,
                             ),
                           ),
-                          child: Column(
+                          child: const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
+                            children: [
                               Icon(Icons.graphic_eq,
                                   color: Colors.white70, size: 28),
                               Text(
@@ -219,7 +219,7 @@ class SpotifyScreen extends StatelessWidget {
                       subtitle:
                       "Girl In Red, Big Sean, Juice WRLD, Post Malone...",
                       cardChild: Image.asset(
-                        "assets/images/a1.png",
+                        "assets/images/img.png",
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) =>
                             Container(color: Colors.grey.shade900),
@@ -232,7 +232,7 @@ class SpotifyScreen extends StatelessWidget {
                       subtitle:
                       "Wallows, Tame Impala, Glass Animals, Chains...",
                       cardChild: Image.asset(
-                        "assets/images/front_left.png",
+                        "assets/images/img.png",
                         fit: BoxFit.cover,
                         errorBuilder: (context, error, stackTrace) =>
                             Container(color: Colors.teal.shade900),
